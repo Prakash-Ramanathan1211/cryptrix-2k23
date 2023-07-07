@@ -855,6 +855,8 @@ body {
 
 .blog_posts_section .blog_posts_content figure img:hover {
     transform: scale(1.1);
+    box-shadow: rgba(248, 164, 164, 0.663) 0px 4px 12px;
+
 }
 
 .blog_posts_content .lower_portion_wrapper {
@@ -2669,7 +2671,7 @@ textarea {
 .banner.with-image .dataforge {
     background: no-repeat url("./DataForge.png") center center;
     background-size: cover;
-    
+
 }
 
 .banner.with-image .cyberquestimg {
@@ -2708,14 +2710,14 @@ textarea {
     left: 0;
     top: 0;
     z-index: 2;
-    
+
 }
 
 @media only screen and (max-width: 800px) {
     .banner .overlay {
         display: block;
         position: relative;
-        
+
     }
 }
 
@@ -2764,17 +2766,63 @@ header {
 }
 
 .banner-section-content {
-    
+
     /* width: 80%; */
     padding-left: 30%;
     /* padding-right: 10%; */
     position: inherit;
 }
 
-.titlecryp{
+.titlecryp {
     text-align: center;
 }
 
-.buttonsection{
+.buttonsection {
     margin-left: -80px;
 }
+
+.card {
+    width: 300px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #000;
+}
+
+.card:hover{
+    box-shadow: rgba(255, 0, 0, 0.663) 0px 4px 12px;
+    transform: scale(1.05);
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    margin-top: 10px;
+}
+
+.card-paragraph {
+    display: none;
+    font-size: 19px;
+}
+
+.expand-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+
